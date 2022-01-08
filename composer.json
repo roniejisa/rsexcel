@@ -1,0 +1,38 @@
+{
+    "name": "roniejisa/rsexcel",
+    "description": "Laravel Excel Basic",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roniejisa",
+            "email": "roniejisa@gmail.com",
+            "homepage": "http://roniejisa.vn",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "php",
+        "phpspreadsheet",
+        "phpexcel",
+        "excel"
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.21",
+        "illuminate/support": "^8.42|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ExcelLaravel\\": "src/"
+        }
+    },
+    "extra":{
+        "laravel": {
+            "aliases": {
+              "RSSheet": "ExcelLaravel\\RSSheet"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
